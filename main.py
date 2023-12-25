@@ -10,7 +10,7 @@ app = FastAPI()
 
 # Load the model
 model = tf.keras.models.load_model("src/keras_model_v2.h5", compile=False)
-class_names = open("src\labels.txt", "r", encoding="utf-8").readlines()
+class_names = open("src/labels.txt", "r", encoding="utf-8").readlines()
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
 def predict(image_path):
