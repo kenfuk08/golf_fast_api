@@ -51,7 +51,7 @@ if uploaded_file is not None:
     st.write("")
 
     # Make API request to FastAPI
-    url = "http://127.0.0.1:8000/predict"
+    url = "https://golf-fast-api.onrender.com/predict"
     
     # Use the original file name from the uploaded file
     files = {"file": (uploaded_file.name, uploaded_file.read(), "image/jpeg")}
